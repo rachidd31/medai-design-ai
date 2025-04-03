@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import Logo from './Logo';
@@ -18,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className="border-b dark:border-gray-800 dark:bg-background/80 backdrop-blur-lg bg-white sticky top-0 z-50">
       <div className="container-custom py-4 flex justify-between items-center">
-        <div className="flex items-center">
+        <div className="flex items-center ml-[-10px]">
           <a href="/" className="flex items-center">
             <Logo />
           </a>
