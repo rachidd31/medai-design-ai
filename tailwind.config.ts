@@ -63,12 +63,12 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				medai: {
+				biomindx: {
 					"blue": "#1E88E5",
 					"teal": "#26A69A",
-					"light-gray": "#F5F7FA",
-					"dark-gray": "#333333",
-					"medium-gray": "#666666"
+					"dark-gray": "#1A1F2C",
+					"medium-gray": "#666666",
+					"light-gray": "#F5F7FA"
 				}
 			},
 			borderRadius: {

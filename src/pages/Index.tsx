@@ -17,7 +17,7 @@ const Index = () => {
         <HeroSection />
         
         {/* Services Section */}
-        <section id="services" className="py-20 bg-white">
+        <section id="services" className="py-20 dark:bg-background bg-white">
           <div className="container-custom">
             <div className="text-center mb-16">
               <h2 className="section-title">Our AI-Powered Healthcare Solutions</h2>
@@ -62,7 +62,7 @@ const Index = () => {
         </section>
         
         {/* Process Section */}
-        <section id="solutions" className="py-20 bg-medai-light-gray">
+        <section id="solutions" className="py-20 dark:bg-black/30 bg-biomindx-light-gray">
           <div className="container-custom">
             <div className="text-center mb-16">
               <h2 className="section-title">Our Process</h2>
@@ -72,32 +72,32 @@ const Index = () => {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-              <div className="bg-white p-8 rounded-xl text-center">
-                <div className="w-12 h-12 bg-medai-blue text-white rounded-full flex items-center justify-center mx-auto mb-4 font-medium">1</div>
-                <h3 className="text-xl font-medium text-medai-dark-gray mb-3">Assessment</h3>
-                <p className="text-medai-medium-gray">Evaluate current processes and identify optimization opportunities.</p>
+              <div className="glass-card p-8 text-center">
+                <div className="w-12 h-12 bg-biomindx-blue text-white rounded-full flex items-center justify-center mx-auto mb-4 font-medium">1</div>
+                <h3 className="text-xl font-medium dark:text-white text-biomindx-dark-gray mb-3">Assessment</h3>
+                <p className="dark:text-gray-300 text-biomindx-medium-gray">Evaluate current processes and identify optimization opportunities.</p>
               </div>
-              <div className="bg-white p-8 rounded-xl text-center">
-                <div className="w-12 h-12 bg-medai-blue text-white rounded-full flex items-center justify-center mx-auto mb-4 font-medium">2</div>
-                <h3 className="text-xl font-medium text-medai-dark-gray mb-3">Strategy</h3>
-                <p className="text-medai-medium-gray">Develop a tailored AI implementation plan aligned with your objectives.</p>
+              <div className="glass-card p-8 text-center">
+                <div className="w-12 h-12 bg-biomindx-blue text-white rounded-full flex items-center justify-center mx-auto mb-4 font-medium">2</div>
+                <h3 className="text-xl font-medium dark:text-white text-biomindx-dark-gray mb-3">Strategy</h3>
+                <p className="dark:text-gray-300 text-biomindx-medium-gray">Develop a tailored AI implementation plan aligned with your objectives.</p>
               </div>
-              <div className="bg-white p-8 rounded-xl text-center">
-                <div className="w-12 h-12 bg-medai-blue text-white rounded-full flex items-center justify-center mx-auto mb-4 font-medium">3</div>
-                <h3 className="text-xl font-medium text-medai-dark-gray mb-3">Implementation</h3>
-                <p className="text-medai-medium-gray">Deploy AI solutions with minimal disruption to existing workflows.</p>
+              <div className="glass-card p-8 text-center">
+                <div className="w-12 h-12 bg-biomindx-blue text-white rounded-full flex items-center justify-center mx-auto mb-4 font-medium">3</div>
+                <h3 className="text-xl font-medium dark:text-white text-biomindx-dark-gray mb-3">Implementation</h3>
+                <p className="dark:text-gray-300 text-biomindx-medium-gray">Deploy AI solutions with minimal disruption to existing workflows.</p>
               </div>
-              <div className="bg-white p-8 rounded-xl text-center">
-                <div className="w-12 h-12 bg-medai-blue text-white rounded-full flex items-center justify-center mx-auto mb-4 font-medium">4</div>
-                <h3 className="text-xl font-medium text-medai-dark-gray mb-3">Refinement</h3>
-                <p className="text-medai-medium-gray">Continuously monitor, evaluate, and improve AI performance.</p>
+              <div className="glass-card p-8 text-center">
+                <div className="w-12 h-12 bg-biomindx-blue text-white rounded-full flex items-center justify-center mx-auto mb-4 font-medium">4</div>
+                <h3 className="text-xl font-medium dark:text-white text-biomindx-dark-gray mb-3">Refinement</h3>
+                <p className="dark:text-gray-300 text-biomindx-medium-gray">Continuously monitor, evaluate, and improve AI performance.</p>
               </div>
             </div>
           </div>
         </section>
         
         {/* Case Studies Section */}
-        <section id="case-studies" className="py-20 bg-white">
+        <section id="case-studies" className="py-20 dark:bg-background bg-white">
           <div className="container-custom">
             <div className="text-center mb-16">
               <h2 className="section-title">Case Studies</h2>
@@ -130,7 +130,7 @@ const Index = () => {
         </section>
         
         {/* Testimonials Section */}
-        <section id="testimonials" className="py-20 bg-medai-light-gray">
+        <section id="testimonials" className="py-20 dark:bg-black/30 bg-biomindx-light-gray">
           <div className="container-custom">
             <div className="text-center mb-16">
               <h2 className="section-title">What Our Clients Say</h2>
@@ -147,7 +147,7 @@ const Index = () => {
                 company="Metropolitan Hospital"
               />
               <TestimonialCard 
-                quote="Implementing MedAI's operational efficiency solutions helped us reduce administrative overhead by 42% while improving patient satisfaction scores."
+                quote="Implementing BioMindX's operational efficiency solutions helped us reduce administrative overhead by 42% while improving patient satisfaction scores."
                 author="Mark Thompson"
                 title="COO"
                 company="HealthFirst Network"
@@ -163,14 +163,14 @@ const Index = () => {
         </section>
         
         {/* CTA Section */}
-        <section className="py-16 bg-medai-blue text-white">
+        <section className="py-16 bg-biomindx-blue text-white">
           <div className="container-custom text-center">
             <h2 className="text-3xl md:text-4xl font-medium mb-6">Ready to Transform Your Medical Processes?</h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
               Contact us today to discuss how AI can enhance efficiency and outcomes for your organization.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#contact" className="bg-white text-medai-blue hover:bg-opacity-90 px-6 py-3 rounded-md font-medium transition-colors">
+              <a href="#contact" className="bg-white text-biomindx-blue hover:bg-opacity-90 px-6 py-3 rounded-md font-medium transition-colors">
                 Schedule a Consultation
               </a>
               <a href="#services" className="bg-transparent text-white border border-white hover:bg-white/10 px-6 py-3 rounded-md font-medium transition-colors">

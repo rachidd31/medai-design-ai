@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import Logo from './Logo';
 
 const navItems = [
   { name: 'Services', href: '#services' },
@@ -15,12 +16,11 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="border-b border-gray-100 bg-white sticky top-0 z-50">
+    <nav className="border-b dark:border-gray-800 dark:bg-background/80 backdrop-blur-lg bg-white sticky top-0 z-50">
       <div className="container-custom py-4 flex justify-between items-center">
         <div className="flex items-center">
-          <a href="/" className="text-xl font-semibold text-medai-blue flex items-center">
-            <span className="text-2xl font-bold">med</span>
-            <span className="text-medai-teal">ai</span>
+          <a href="/" className="flex items-center">
+            <Logo />
           </a>
         </div>
 
@@ -30,7 +30,7 @@ const Navbar = () => {
             <a 
               key={item.name} 
               href={item.href}
-              className="text-medai-dark-gray hover:text-medai-blue transition-colors font-medium text-sm"
+              className="dark:text-gray-300 dark:hover:text-biomindx-blue text-biomindx-dark-gray hover:text-biomindx-blue transition-colors font-medium text-sm"
             >
               {item.name}
             </a>
@@ -39,7 +39,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-medai-dark-gray"
+          className="md:hidden dark:text-white text-biomindx-dark-gray"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -48,13 +48,13 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="container-custom md:hidden py-4 pb-6 bg-white">
+        <div className="container-custom md:hidden py-4 pb-6 dark:bg-background/95 backdrop-blur-lg bg-white">
           <div className="flex flex-col space-y-4">
             {navItems.map((item) => (
               <a 
                 key={item.name} 
                 href={item.href}
-                className="text-medai-dark-gray hover:text-medai-blue transition-colors font-medium"
+                className="dark:text-gray-300 dark:hover:text-biomindx-blue text-biomindx-dark-gray hover:text-biomindx-blue transition-colors font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}

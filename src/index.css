@@ -38,6 +38,36 @@
     --radius: 0.5rem;
   }
 
+  .dark {
+    --background: 240 10% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 13%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 13%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 210 80% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 174 60% 40%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 240 3.7% 20.9%;
+    --muted-foreground: 240 5% 74.9%;
+
+    --accent: 240 3.7% 20.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 50.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 25.9%;
+    --input: 240 3.7% 25.9%;
+    --ring: 210 80% 50%;
+  }
+
   * {
     @apply border-border;
   }
@@ -57,22 +87,29 @@
   }
   
   .btn-primary {
-    @apply bg-medai-blue text-white hover:bg-medai-blue/90 px-6 py-3 rounded-md font-medium transition-colors;
+    @apply bg-biomindx-blue text-white hover:bg-biomindx-blue/90 px-6 py-3 rounded-md font-medium transition-colors;
   }
   
   .btn-secondary {
-    @apply bg-white text-medai-blue border border-medai-blue hover:bg-medai-light-gray px-6 py-3 rounded-md font-medium transition-colors;
+    @apply dark:bg-white/10 dark:text-white dark:border-white/20 dark:hover:bg-white/20 
+           bg-white text-biomindx-blue border border-biomindx-blue hover:bg-biomindx-light-gray 
+           px-6 py-3 rounded-md font-medium transition-colors;
   }
   
   .section-title {
-    @apply text-3xl md:text-4xl font-medium mb-6 text-medai-dark-gray;
+    @apply text-3xl md:text-4xl font-medium mb-6 dark:text-white text-biomindx-dark-gray;
   }
   
   .section-subtitle {
-    @apply text-xl text-medai-medium-gray mb-12 max-w-3xl;
+    @apply text-xl dark:text-gray-300 text-biomindx-medium-gray mb-12 max-w-3xl;
   }
   
   .card-shadow {
-    @apply shadow-md hover:shadow-lg transition-shadow duration-300;
+    @apply shadow-md hover:shadow-lg transition-shadow duration-300 dark:shadow-black/30;
+  }
+
+  .glass-card {
+    @apply dark:bg-white/5 dark:backdrop-blur-lg dark:border-white/10 
+           bg-white border border-gray-100 rounded-xl;
   }
 }
